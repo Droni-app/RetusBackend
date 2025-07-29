@@ -3,7 +3,6 @@ import { BaseModel, column, belongsTo, hasMany, beforeCreate } from '@adonisjs/l
 import type { BelongsTo, HasMany } from '@adonisjs/lucid/types/relations'
 import { randomUUID } from 'node:crypto'
 import User from '#models/user'
-import Category from '#models/category'
 import Answer from '#models/answer'
 import Comment from '#models/comment'
 import Vote from '#models/vote'
@@ -15,9 +14,6 @@ export default class Question extends BaseModel {
   @column({ columnName: 'user_id' })
   declare userId: string
 
-  @column({ columnName: 'category_id' })
-  declare categoryId: string | null
-
   @column()
   declare name: string
 
@@ -25,7 +21,7 @@ export default class Question extends BaseModel {
   declare slug: string
 
   @column()
-  declare content: string | null
+  declare content: string
 
   @column({ columnName: 'response_1' })
   declare response1: string
@@ -64,7 +60,10 @@ export default class Question extends BaseModel {
   declare level: number
 
   @column()
-  declare status: string
+  declare saber: boolean
+
+  @column()
+  declare approvedAt: DateTime | null
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
@@ -75,9 +74,6 @@ export default class Question extends BaseModel {
   // Relationships
   @belongsTo(() => User)
   declare user: BelongsTo<typeof User>
-
-  @belongsTo(() => Category)
-  declare category: BelongsTo<typeof Category>
 
   @hasMany(() => Answer)
   declare answers: HasMany<typeof Answer>
