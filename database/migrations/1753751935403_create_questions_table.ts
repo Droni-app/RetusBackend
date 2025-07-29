@@ -7,12 +7,6 @@ export default class extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.uuid('id').primary()
       table.uuid('user_id').notNullable().references('id').inTable('users').onDelete('CASCADE')
-      table
-        .uuid('category_id')
-        .nullable()
-        .references('id')
-        .inTable('categories')
-        .onDelete('SET NULL')
       table.string('name', 255).notNullable()
       table.string('slug', 255).unique().notNullable()
       table.text('content').notNullable()
@@ -27,8 +21,8 @@ export default class extends BaseSchema {
       table.json('tags').notNullable()
       table.decimal('rank', 5, 2).notNullable()
       table.decimal('level', 5, 2).notNullable()
-      table.datetime('approved_at').nullable()
       table.boolean('saber').defaultTo(false).notNullable()
+      table.datetime('approved_at').nullable()
       table.timestamp('created_at').defaultTo(this.now())
       table.timestamp('updated_at').defaultTo(this.now())
     })

@@ -1,0 +1,696 @@
+{
+  "categories": [
+    {
+      "name": "Saber11 (ICFES)",
+      "slug": "saber11-icfes",
+      "icon": "mdi-book-open-page-variant",
+      "description": "Categorías del examen Saber 11 del ICFES",
+      "parentId": null,
+      "children": [
+        {
+          "name": "Lectura Crítica",
+          "slug": "lectura-critica",
+          "icon": "mdi-book-open-variant",
+          "description": "Competencias en lectura crítica"
+        },
+        {
+          "name": "Matemáticas",
+          "slug": "matematicas",
+          "icon": "mdi-calculator",
+          "description": "Competencias matemáticas"
+        },
+        {
+          "name": "Sociales y Ciudadanas",
+          "slug": "sociales-ciudadanas",
+          "icon": "mdi-bank",
+          "description": "Competencias en ciencias sociales y ciudadanas"
+        },
+        {
+          "name": "Ciencias Naturales",
+          "slug": "ciencias-naturales",
+          "icon": "mdi-microscope",
+          "description": "Competencias en ciencias naturales"
+        },
+        {
+          "name": "Inglés",
+          "slug": "ingles",
+          "icon": "mdi-translate",
+          "description": "Competencias en inglés"
+        }
+      ]
+    },
+    {
+      "name": "SaberPro (ECAES)",
+      "slug": "saberpro-ecaes",
+      "icon": "mdi-school",
+      "description": "Categorías del examen SaberPro (ECAES)",
+      "parentId": null,
+      "children": [
+        {
+          "name": "Agronomía, veterinaria y afines",
+          "slug": "agronomia-veterinaria-afines",
+          "icon": "mdi-corn",
+          "description": "Programas relacionados con agronomía y veterinaria",
+          "children": [
+            {
+              "name": "Agronomía",
+              "slug": "agronomia",
+              "icon": "mdi-sprout",
+              "description": "Programas de agronomía"
+            },
+            {
+              "name": "Zootecnia",
+              "slug": "zootecnia",
+              "icon": "mdi-cow",
+              "description": "Programas de zootecnia"
+            },
+            {
+              "name": "Medicina veterinaria",
+              "slug": "medicina-veterinaria",
+              "icon": "mdi-dog",
+              "description": "Programas de medicina veterinaria"
+            }
+          ]
+        },
+        {
+          "name": "Bellas artes",
+          "slug": "bellas-artes",
+          "icon": "mdi-palette",
+          "description": "Programas relacionados con bellas artes",
+          "children": [
+            {
+              "name": "Artes plásticas, visuales y afines",
+              "slug": "artes-plasticas-visuales",
+              "icon": "mdi-image-frame",
+              "description": "Programas de artes plásticas y visuales"
+            },
+            {
+              "name": "Artes representativas",
+              "slug": "artes-representativas",
+              "icon": "mdi-drama-masks",
+              "description": "Programas de artes representativas"
+            },
+            {
+              "name": "Publicidad y afines",
+              "slug": "publicidad-afines",
+              "icon": "mdi-bullhorn",
+              "description": "Programas de publicidad"
+            },
+            {
+              "name": "Diseño",
+              "slug": "diseno",
+              "icon": "mdi-design",
+              "description": "Programas de diseño"
+            },
+            {
+              "name": "Música",
+              "slug": "musica",
+              "icon": "mdi-music",
+              "description": "Programas de música"
+            },
+            {
+              "name": "Otros programas asociados a bellas artes",
+              "slug": "otros-bellas-artes",
+              "icon": "mdi-artist",
+              "description": "Otros programas de bellas artes"
+            }
+          ]
+        },
+        {
+          "name": "Ciencias de la educación",
+          "slug": "ciencias-educacion",
+          "icon": "mdi-teach",
+          "description": "Programas relacionados con ciencias de la educación",
+          "children": [
+            {
+              "name": "Educación",
+              "slug": "educacion",
+              "icon": "mdi-book-education",
+              "description": "Programas de educación"
+            }
+          ]
+        },
+        {
+          "name": "Ciencias de la salud",
+          "slug": "ciencias-salud",
+          "icon": "mdi-medical-bag",
+          "description": "Programas relacionados con ciencias de la salud",
+          "children": [
+            {
+              "name": "Bacteriología",
+              "slug": "bacteriologia",
+              "icon": "mdi-bacteria",
+              "description": "Programas de bacteriología"
+            },
+            {
+              "name": "Enfermería",
+              "slug": "enfermeria",
+              "icon": "mdi-needle",
+              "description": "Programas de enfermería"
+            },
+            {
+              "name": "Instrumentación quirúrgica",
+              "slug": "instrumentacion-quirurgica",
+              "icon": "mdi-surgical-scalpel",
+              "description": "Programas de instrumentación quirúrgica"
+            },
+            {
+              "name": "Medicina",
+              "slug": "medicina",
+              "icon": "mdi-stethoscope",
+              "description": "Programas de medicina"
+            },
+            {
+              "name": "Nutrición y dietética",
+              "slug": "nutricion-dietetica",
+              "icon": "mdi-food-apple",
+              "description": "Programas de nutrición y dietética"
+            },
+            {
+              "name": "Odontología",
+              "slug": "odontologia",
+              "icon": "mdi-tooth",
+              "description": "Programas de odontología"
+            },
+            {
+              "name": "Optometría, otros programas de ciencias de la salud",
+              "slug": "optometria-otros-salud",
+              "icon": "mdi-glasses",
+              "description": "Programas de optometría y otros de ciencias de la salud"
+            },
+            {
+              "name": "Salud pública",
+              "slug": "salud-publica",
+              "icon": "mdi-hospital-building",
+              "description": "Programas de salud pública"
+            },
+            {
+              "name": "Terapias",
+              "slug": "terapias",
+              "icon": "mdi-hand-heart",
+              "description": "Programas de terapias"
+            }
+          ]
+        },
+        {
+          "name": "Ciencias sociales y humanas",
+          "slug": "ciencias-sociales-humanas",
+          "icon": "mdi-account-group",
+          "description": "Programas relacionados con ciencias sociales y humanas",
+          "children": [
+            {
+              "name": "Antropología y artes liberales",
+              "slug": "antropologia-artes-liberales",
+              "icon": "mdi-human",
+              "description": "Programas de antropología y artes liberales"
+            },
+            {
+              "name": "Bibliotecología, otros de ciencias sociales y humanas",
+              "slug": "bibliotecologia-otros-sociales",
+              "icon": "mdi-library",
+              "description": "Programas de bibliotecología y otros de ciencias sociales"
+            },
+            {
+              "name": "Ciencia política, relaciones internacionales",
+              "slug": "ciencia-politica-relaciones",
+              "icon": "mdi-earth",
+              "description": "Programas de ciencia política y relaciones internacionales"
+            },
+            {
+              "name": "Comunicación social, periodismo y afines",
+              "slug": "comunicacion-periodismo",
+              "icon": "mdi-newspaper",
+              "description": "Programas de comunicación social y periodismo"
+            },
+            {
+              "name": "Deportes, educación física y recreación",
+              "slug": "deportes-educacion-fisica",
+              "icon": "mdi-soccer",
+              "description": "Programas de deportes y educación física"
+            },
+            {
+              "name": "Derecho y afines",
+              "slug": "derecho-afines",
+              "icon": "mdi-scale-balance",
+              "description": "Programas de derecho"
+            },
+            {
+              "name": "Filosofía, teología y afines",
+              "slug": "filosofia-teologia",
+              "icon": "mdi-thought-bubble",
+              "description": "Programas de filosofía y teología"
+            },
+            {
+              "name": "Formación relacionada con el campo militar o policial",
+              "slug": "formacion-militar-policial",
+              "icon": "mdi-shield-account",
+              "description": "Programas de formación militar o policial"
+            },
+            {
+              "name": "Geografía, historia",
+              "slug": "geografia-historia",
+              "icon": "mdi-map",
+              "description": "Programas de geografía e historia"
+            },
+            {
+              "name": "Lenguas modernas, literatura, lingüística y afines",
+              "slug": "lenguas-literatura-linguistica",
+              "icon": "mdi-book-alphabet",
+              "description": "Programas de lenguas modernas, literatura y lingüística"
+            },
+            {
+              "name": "Psicología",
+              "slug": "psicologia",
+              "icon": "mdi-brain",
+              "description": "Programas de psicología"
+            },
+            {
+              "name": "Sociología, trabajo social y afines",
+              "slug": "sociologia-trabajo-social",
+              "icon": "mdi-account-multiple",
+              "description": "Programas de sociología y trabajo social"
+            }
+          ]
+        },
+        {
+          "name": "Economía, administración, contaduría y afines",
+          "slug": "economia-administracion-contaduria",
+          "icon": "mdi-briefcase",
+          "description": "Programas relacionados con economía, administración y contaduría",
+          "children": [
+            {
+              "name": "Administración",
+              "slug": "administracion",
+              "icon": "mdi-chart-line",
+              "description": "Programas de administración"
+            },
+            {
+              "name": "Contaduría pública",
+              "slug": "contaduria-publica",
+              "icon": "mdi-calculator-variant",
+              "description": "Programas de contaduría pública"
+            },
+            {
+              "name": "Economía",
+              "slug": "economia",
+              "icon": "mdi-cash",
+              "description": "Programas de economía"
+            }
+          ]
+        },
+        {
+          "name": "Ingeniería, arquitectura, urbanismo y afines",
+          "slug": "ingenieria-arquitectura-urbanismo",
+          "icon": "mdi-hammer-wrench",
+          "description": "Programas relacionados con ingeniería, arquitectura y urbanismo",
+          "children": [
+            {
+              "name": "Arquitectura",
+              "slug": "arquitectura",
+              "icon": "mdi-city",
+              "description": "Programas de arquitectura"
+            },
+            {
+              "name": "Ingeniería administrativa y afines",
+              "slug": "ingenieria-administrativa",
+              "icon": "mdi-clipboard-text",
+              "description": "Programas de ingeniería administrativa"
+            },
+            {
+              "name": "Ingeniería agrícola, forestal y afines",
+              "slug": "ingenieria-agricola-forestal",
+              "icon": "mdi-tree",
+              "description": "Programas de ingeniería agrícola y forestal"
+            },
+            {
+              "name": "Ingeniería agroindustrial, alimentos y afines",
+              "slug": "ingenieria-agroindustrial-alimentos",
+              "icon": "mdi-factory",
+              "description": "Programas de ingeniería agroindustrial y alimentos"
+            },
+            {
+              "name": "Ingeniería agronómica, pecuaria y afines",
+              "slug": "ingenieria-agronomica-pecuaria",
+              "icon": "mdi-tractor",
+              "description": "Programas de ingeniería agronómica y pecuaria"
+            },
+            {
+              "name": "Ingeniería ambiental, sanitaria y afines",
+              "slug": "ingenieria-ambiental-sanitaria",
+              "icon": "mdi-leaf",
+              "description": "Programas de ingeniería ambiental y sanitaria"
+            },
+            {
+              "name": "Ingeniería biomédica y afines",
+              "slug": "ingenieria-biomedica",
+              "icon": "mdi-dna",
+              "description": "Programas de ingeniería biomédica"
+            },
+            {
+              "name": "Ingeniería civil y afines",
+              "slug": "ingenieria-civil",
+              "icon": "mdi-crane",
+              "description": "Programas de ingeniería civil"
+            },
+            {
+              "name": "Ingeniería de minas, metalurgia y afines",
+              "slug": "ingenieria-minas-metalurgia",
+              "icon": "mdi-pickaxe",
+              "description": "Programas de ingeniería de minas y metalurgia"
+            },
+            {
+              "name": "Ingeniería de sistemas, telemática y afines",
+              "slug": "ingenieria-sistemas-telematica",
+              "icon": "mdi-laptop",
+              "description": "Programas de ingeniería de sistemas y telemática"
+            },
+            {
+              "name": "Ingeniería eléctrica y afines",
+              "slug": "ingenieria-electrica",
+              "icon": "mdi-lightning-bolt",
+              "description": "Programas de ingeniería eléctrica"
+            },
+            {
+              "name": "Ingeniería electrónica, telecomunicaciones y afines",
+              "slug": "ingenieria-electronica-telecomunicaciones",
+              "icon": "mdi-radio-tower",
+              "description": "Programas de ingeniería electrónica y telecomunicaciones"
+            },
+            {
+              "name": "Ingeniería industrial y afines",
+              "slug": "ingenieria-industrial",
+              "icon": "mdi-cog",
+              "description": "Programas de ingeniería industrial"
+            },
+            {
+              "name": "Ingeniería mecánica y afines",
+              "slug": "ingenieria-mecanica",
+              "icon": "mdi-engine",
+              "description": "Programas de ingeniería mecánica"
+            },
+            {
+              "name": "Ingeniería química y afines",
+              "slug": "ingenieria-quimica",
+              "icon": "mdi-flask",
+              "description": "Programas de ingeniería química"
+            },
+            {
+              "name": "Otras ingenierías",
+              "slug": "otras-ingenierias",
+              "icon": "mdi-wrench",
+              "description": "Otros programas de ingeniería"
+            }
+          ]
+        },
+        {
+          "name": "Matemáticas y ciencias naturales",
+          "slug": "matematicas-ciencias-naturales",
+          "icon": "mdi-flask-outline",
+          "description": "Programas relacionados con matemáticas y ciencias naturales",
+          "children": [
+            {
+              "name": "Biología, microbiología y afines",
+              "slug": "biologia-microbiologia",
+              "icon": "mdi-dna",
+              "description": "Programas de biología y microbiología"
+            },
+            {
+              "name": "Física",
+              "slug": "fisica",
+              "icon": "mdi-atom",
+              "description": "Programas de física"
+            },
+            {
+              "name": "Geología, otros programas de ciencias naturales",
+              "slug": "geologia-otros-naturales",
+              "icon": "mdi-mountain",
+              "description": "Programas de geología y otros de ciencias naturales"
+            },
+            {
+              "name": "Matemáticas, estadística y afines",
+              "slug": "matematicas-estadistica",
+              "icon": "mdi-chart-bar",
+              "description": "Programas de matemáticas y estadística"
+            },
+            {
+              "name": "Química y afines",
+              "slug": "quimica-afines",
+              "icon": "mdi-test-tube",
+              "description": "Programas de química"
+            }
+          ]
+        },
+        {
+          "name": "Módulos específicos",
+          "slug": "modulos-especificos",
+          "icon": "mdi-clipboard-list",
+          "description": "Módulos específicos de evaluación",
+          "children": [
+            {
+              "name": "Producción Agrícola",
+              "slug": "produccion-agricola",
+              "icon": "mdi-wheat",
+              "description": "Módulo de producción agrícola"
+            },
+            {
+              "name": "Producción Pecuaria",
+              "slug": "produccion-pecuaria",
+              "icon": "mdi-cow",
+              "description": "Módulo de producción pecuaria"
+            },
+            {
+              "name": "Salud y Bienestar Animal",
+              "slug": "salud-bienestar-animal",
+              "icon": "mdi-paw",
+              "description": "Módulo de salud y bienestar animal"
+            },
+            {
+              "name": "Procesos Comunicativos",
+              "slug": "procesos-comunicativos",
+              "icon": "mdi-message-text",
+              "description": "Módulo de procesos comunicativos"
+            },
+            {
+              "name": "Generación de Artefactos",
+              "slug": "generacion-artefactos",
+              "icon": "mdi-creation",
+              "description": "Módulo de generación de artefactos"
+            },
+            {
+              "name": "Enseñar",
+              "slug": "ensenar",
+              "icon": "mdi-account-tie",
+              "description": "Módulo de enseñanza"
+            },
+            {
+              "name": "Formar",
+              "slug": "formar",
+              "icon": "mdi-school-outline",
+              "description": "Módulo de formación"
+            },
+            {
+              "name": "Evaluar",
+              "slug": "evaluar",
+              "icon": "mdi-file-document-edit",
+              "description": "Módulo de evaluación"
+            },
+            {
+              "name": "Atención en Salud",
+              "slug": "atencion-salud",
+              "icon": "mdi-hospital",
+              "description": "Módulo de atención en salud"
+            },
+            {
+              "name": "Promoción de la Salud y Prevención de la Enfermedad",
+              "slug": "promocion-salud-prevencion",
+              "icon": "mdi-heart-pulse",
+              "description": "Módulo de promoción de la salud y prevención de la enfermedad"
+            },
+            {
+              "name": "Fundamentación en Diagnóstico y Tratamiento Médico",
+              "slug": "fundamentacion-diagnostico-tratamiento",
+              "icon": "mdi-medical-bag",
+              "description": "Módulo de fundamentación en diagnóstico y tratamiento médico"
+            },
+            {
+              "name": "Diagnóstico y Tratamiento en Salud Oral",
+              "slug": "diagnostico-tratamiento-salud-oral",
+              "icon": "mdi-tooth-outline",
+              "description": "Módulo de diagnóstico y tratamiento en salud oral"
+            },
+            {
+              "name": "Investigación en Ciencias Sociales",
+              "slug": "investigacion-ciencias-sociales",
+              "icon": "mdi-magnify",
+              "description": "Módulo de investigación en ciencias sociales"
+            },
+            {
+              "name": "Investigación Jurídica",
+              "slug": "investigacion-juridica",
+              "icon": "mdi-gavel",
+              "description": "Módulo de investigación jurídica"
+            },
+            {
+              "name": "Comunicación Jurídica",
+              "slug": "comunicacion-juridica",
+              "icon": "mdi-file-document",
+              "description": "Módulo de comunicación jurídica"
+            },
+            {
+              "name": "Gestión del Conflicto",
+              "slug": "gestion-conflicto",
+              "icon": "mdi-handshake",
+              "description": "Módulo de gestión del conflicto"
+            },
+            {
+              "name": "Análisis de Problemáticas Psicológicas",
+              "slug": "analisis-problematicas-psicologicas",
+              "icon": "mdi-head-cog",
+              "description": "Módulo de análisis de problemáticas psicológicas"
+            },
+            {
+              "name": "Intervención en Procesos Sociales",
+              "slug": "intervencion-procesos-sociales",
+              "icon": "mdi-account-group-outline",
+              "description": "Módulo de intervención en procesos sociales"
+            },
+            {
+              "name": "Formulación, Evaluación y Gestión de Proyectos",
+              "slug": "formulacion-evaluacion-gestion-proyectos",
+              "icon": "mdi-clipboard-check",
+              "description": "Módulo de formulación, evaluación y gestión de proyectos"
+            },
+            {
+              "name": "Gestión de Organizaciones",
+              "slug": "gestion-organizaciones",
+              "icon": "mdi-office-building",
+              "description": "Módulo de gestión de organizaciones"
+            },
+            {
+              "name": "Gestión Financiera",
+              "slug": "gestion-financiera",
+              "icon": "mdi-currency-usd",
+              "description": "Módulo de gestión financiera"
+            },
+            {
+              "name": "Información y Control Contable",
+              "slug": "informacion-control-contable",
+              "icon": "mdi-calculator-variant-outline",
+              "description": "Módulo de información y control contable"
+            },
+            {
+              "name": "Análisis Económico",
+              "slug": "analisis-economico",
+              "icon": "mdi-trending-up",
+              "description": "Módulo de análisis económico"
+            },
+            {
+              "name": "Estudio Proyectual",
+              "slug": "estudio-proyectual",
+              "icon": "mdi-ruler-square",
+              "description": "Módulo de estudio proyectual"
+            },
+            {
+              "name": "Proyecto de Arquitectura",
+              "slug": "proyecto-arquitectura",
+              "icon": "mdi-domain",
+              "description": "Módulo de proyecto de arquitectura"
+            },
+            {
+              "name": "Formulación de Proyectos de Ingeniería",
+              "slug": "formulacion-proyectos-ingenieria",
+              "icon": "mdi-tools",
+              "description": "Módulo de formulación de proyectos de ingeniería"
+            },
+            {
+              "name": "Pensamiento Científico Matemáticas y Estadística",
+              "slug": "pensamiento-cientifico-matematicas-estadistica",
+              "icon": "mdi-chart-scatter-plot",
+              "description": "Módulo de pensamiento científico en matemáticas y estadística"
+            },
+            {
+              "name": "Pensamiento Científico Ciencias Biológicas",
+              "slug": "pensamiento-cientifico-ciencias-biologicas",
+              "icon": "mdi-leaf-circle",
+              "description": "Módulo de pensamiento científico en ciencias biológicas"
+            },
+            {
+              "name": "Diseño de Sistemas, Procesos y Productos Agroindustriales",
+              "slug": "diseno-sistemas-procesos-productos-agroindustriales",
+              "icon": "mdi-cogs",
+              "description": "Módulo de diseño de sistemas, procesos y productos agroindustriales"
+            },
+            {
+              "name": "Diseño de Sistemas de Manejo de Impacto Ambiental",
+              "slug": "diseno-sistemas-manejo-impacto-ambiental",
+              "icon": "mdi-earth-arrow-right",
+              "description": "Módulo de diseño de sistemas de manejo de impacto ambiental"
+            },
+            {
+              "name": "Pensamiento Científico Química",
+              "slug": "pensamiento-cientifico-quimica",
+              "icon": "mdi-molecule",
+              "description": "Módulo de pensamiento científico en química"
+            },
+            {
+              "name": "Pensamiento Científico Ciencias Físicas",
+              "slug": "pensamiento-cientifico-ciencias-fisicas",
+              "icon": "mdi-orbit",
+              "description": "Módulo de pensamiento científico en ciencias físicas"
+            },
+            {
+              "name": "Diseño de Obras de Infraestructura",
+              "slug": "diseno-obras-infraestructura",
+              "icon": "mdi-bridge",
+              "description": "Módulo de diseño de obras de infraestructura"
+            },
+            {
+              "name": "Diseño de Software",
+              "slug": "diseno-software",
+              "icon": "mdi-code-tags",
+              "description": "Módulo de diseño de software"
+            },
+            {
+              "name": "Diseño de Sistemas de Control",
+              "slug": "diseno-sistemas-control",
+              "icon": "mdi-tune",
+              "description": "Módulo de diseño de sistemas de control"
+            },
+            {
+              "name": "Diseño de Sistemas Productivos y Logísticos",
+              "slug": "diseno-sistemas-productivos-logisticos",
+              "icon": "mdi-truck-delivery",
+              "description": "Módulo de diseño de sistemas productivos y logísticos"
+            },
+            {
+              "name": "Diseño de Sistemas Mecánicos",
+              "slug": "diseno-sistemas-mecanicos",
+              "icon": "mdi-gear",
+              "description": "Módulo de diseño de sistemas mecánicos"
+            },
+            {
+              "name": "Diseño de Procesos Industriales",
+              "slug": "diseno-procesos-industriales",
+              "icon": "mdi-factory",
+              "description": "Módulo de diseño de procesos industriales"
+            },
+            {
+              "name": "Pensamiento Científico Ciencias de la Tierra",
+              "slug": "pensamiento-cientifico-ciencias-tierra",
+              "icon": "mdi-earth",
+              "description": "Módulo de pensamiento científico en ciencias de la tierra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SaberTyT",
+      "slug": "saber-tyt",
+      "icon": "mdi-clipboard-check-outline",
+      "description": "Categorías del examen SaberTyT",
+      "parentId": null,
+      "children": []
+    }
+  ]
+}

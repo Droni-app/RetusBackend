@@ -1,11 +1,19 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column, belongsTo, hasMany, beforeCreate } from '@adonisjs/lucid/orm'
-import type { BelongsTo, HasMany } from '@adonisjs/lucid/types/relations'
+import {
+  BaseModel,
+  column,
+  belongsTo,
+  hasMany,
+  beforeCreate,
+  manyToMany,
+} from '@adonisjs/lucid/orm'
+import type { BelongsTo, HasMany, ManyToMany } from '@adonisjs/lucid/types/relations'
 import { randomUUID } from 'node:crypto'
 import User from '#models/user'
 import Answer from '#models/answer'
 import Comment from '#models/comment'
 import Vote from '#models/vote'
+import Category from '#models/category'
 
 export default class Question extends BaseModel {
   @column({ isPrimary: true })
@@ -83,6 +91,9 @@ export default class Question extends BaseModel {
 
   @hasMany(() => Vote)
   declare votes: HasMany<typeof Vote>
+
+  @manyToMany(() => Category)
+  declare categories: ManyToMany<typeof Category>
 
   @beforeCreate()
   static async generateUuid(question: Question) {
