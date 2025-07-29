@@ -9,6 +9,7 @@
 
 import router from '@adonisjs/core/services/router'
 const AuthController = () => import('#controllers/auth_controller')
+const CategoriesController = () => import('#controllers/categories_controller')
 const QuestionsController = () => import('#controllers/questions_controller')
 
 router.get('/', async () => {
@@ -18,4 +19,5 @@ router.get('/', async () => {
 })
 
 router.get('/auth/me', [AuthController, 'me'])
+router.resource('categories', CategoriesController).only(['index', 'show'])
 router.resource('/questions', QuestionsController).apiOnly()

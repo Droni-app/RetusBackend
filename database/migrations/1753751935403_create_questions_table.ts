@@ -14,7 +14,6 @@ export default class extends BaseSchema {
       table.string('response_2', 255).notNullable()
       table.string('response_3', 255).notNullable()
       table.string('response_4', 255).notNullable()
-      table.string('response_5', 255).notNullable()
       table.tinyint('correct').notNullable()
       table.integer('time').unsigned().defaultTo(5).notNullable()
       table.string('picture', 255).nullable()

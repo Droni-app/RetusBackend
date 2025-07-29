@@ -43,9 +43,6 @@ export default class Question extends BaseModel {
   @column({ columnName: 'response_4' })
   declare response4: string
 
-  @column({ columnName: 'response_5' })
-  declare response5: string
-
   @column()
   declare correct: number
 
