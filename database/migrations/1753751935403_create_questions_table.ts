@@ -5,10 +5,32 @@ export default class extends BaseSchema {
 
   async up() {
     this.schema.createTable(this.tableName, (table) => {
-      table.increments('id')
+      table.uuid('id').primary()
+      table.uuid('user_id').notNullable().references('id').inTable('users').onDelete('CASCADE')
+      table
+        .uuid('category_id')
+        .nullable()
+        .references('id')
+        .inTable('categories')
+        .onDelete('SET NULL')
+      table.string('name', 255).notNullable()
+      table.string('slug', 255).unique().notNullable()
+      table.text('content').nullable()
+      table.string('response_1', 255).notNullable()
+      table.string('response_2', 255).notNullable()
+      table.string('response_3', 255).notNullable()
+      table.string('response_4', 255).notNullable()
+      table.string('response_5', 255).notNullable()
+      table.tinyint('correct').notNullable()
+      table.integer('time').unsigned().defaultTo(5).notNullable()
+      table.string('picture', 255).nullable()
+      table.json('tags').notNullable()
+      table.decimal('rank', 5, 2).notNullable()
+      table.decimal('level', 5, 2).notNullable()
+      table.string('status', 50).defaultTo('pending')
 
-      table.timestamp('created_at')
-      table.timestamp('updated_at')
+      table.timestamp('created_at').defaultTo(this.now())
+      table.timestamp('updated_at').defaultTo(this.now())
     })
   }
 
