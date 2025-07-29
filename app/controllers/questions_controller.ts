@@ -1,13 +1,15 @@
 import type { HttpContext } from '@adonisjs/core/http'
 import Question from '#models/question'
 import { createQuestionValidator, updateQuestionValidator } from '#validators/question'
+import string from '@adonisjs/core/helpers/string'
 
 export default class QuestionsController {
   /**
    * Display a list of resource
    */
-  async index({}: HttpContext) {
+  async index({ user }: HttpContext) {
     const questions = await Question.query()
+      .where('userId', user.id)
       .preload('user')
       .orderBy('createdAt', 'desc')
       .paginate(1, 10)
@@ -21,7 +23,12 @@ export default class QuestionsController {
   async store({ request, user }: HttpContext) {
     const data = request.all()
     const payload = await createQuestionValidator.validate(data)
-    return { payload, user }
+    const question = await Question.create({
+      ...payload,
+      userId: user.id,
+      slug: string.slug(`${payload.name}-${Date.now()}`),
+    })
+    return question
   }
 
   /**

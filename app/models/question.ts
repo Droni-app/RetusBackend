@@ -52,10 +52,7 @@ export default class Question extends BaseModel {
   @column()
   declare picture: string | null
 
-  @column({
-    consume: (value: string) => JSON.parse(value),
-    prepare: (value: any) => JSON.stringify(value),
-  })
+  @column()
   declare tags: any
 
   @column()
